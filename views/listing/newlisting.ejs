@@ -2,7 +2,7 @@
 <body>
   <div class="row">
     <div class="col col-8 offset-2">
-      <h2>New Listing</h2>
+      <h2 class="font-weight-bold">New Listing</h2>
       <br />
       <form
         action="/listing"
@@ -80,8 +80,7 @@
                 class="addCountryEvent form-select"
                 required
               >
-                <% for (const key in countries) { %> <% if(countries[key].name
-                === "Pakistan") {%>
+                <% for (const key in countries) { %> <% if(countries[key].name === "India") {%>
                 <option value="<%= countries[key].name %>" selected>
                   <%= countries[key].name %>
                 </option>
@@ -104,8 +103,7 @@
                 class="form-select"
                 required
               >
-                <% for (const city of countries.PK.cities) { if(city ===
-                "Islamabad") { %>
+                <% for (const city of countries.IN.cities) { if(city === "Mumbai") { %>
                 <option value="<%= city %>" selected><%= city %></option>
                 <%}else{ %>
                 <option value="<%= city %>"><%= city %></option>
